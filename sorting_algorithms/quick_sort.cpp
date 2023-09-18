@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+
 int partition(std::vector<int>&v, int left, int right)
 {
   int pivot = v[right];
@@ -21,6 +22,7 @@ int partition(std::vector<int>&v, int left, int right)
   return pId;
 };
 
+
 void quickSort(std::vector<int>&v, int left, int right)
 {
   if (left >= right)
@@ -33,6 +35,7 @@ void quickSort(std::vector<int>&v, int left, int right)
   quickSort(v, left, pivot - 1);
   quickSort(v, pivot + 1, right);
 };
+
 
 int main()
 {
